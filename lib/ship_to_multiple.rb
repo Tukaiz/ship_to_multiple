@@ -11,7 +11,8 @@ module ShipToMultiple
   module Authorization
     module Permissions
       def can_ship_to_multiple
-        can :manage, MultiShip::Cart
+        # Depricated Class
+        can :manage, Carts::MultiShip
       end
     end
   end
